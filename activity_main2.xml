@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editview1"
+        android:layout_width="319dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:hint="Input"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <EditText
+        android:id="@+id/editview2"
+        android:layout_width="316dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="448dp"
+        android:ems="10"
+        android:hint="Output"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editview1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="134dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="139dp"
+        android:text="CLEAR"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btndecode"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <Button
+        android:id="@+id/btnencoder"
+        android:layout_width="229dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="312dp"
+        android:text="ENCODE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editview2"
+        app:layout_constraintVertical_bias="0.718" />
+
+    <Button
+        android:id="@+id/btndecode"
+        android:layout_width="229dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="188dp"
+        android:text="DECODE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnencoder"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
